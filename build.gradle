@@ -1,0 +1,17 @@
+plugins {
+  id "java"
+  id "io.ratpack.ratpack-java" version "1.0.0"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    runtime "org.apache.logging.log4j:log4j-slf4j-impl:2.3"
+    runtime "org.apache.logging.log4j:log4j-core:2.3"
+    runtime "com.lmax:disruptor:3.3.2"
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'

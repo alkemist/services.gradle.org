@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="DEFAULT" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} %X %m %ex%n</Pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <AsyncRoot level="info" includeLocation="false">
+            <AppenderRef ref="DEFAULT"/>
+        </AsyncRoot>
+        <Logger name="org.jooq.Constants" level="off"/>
+    </Loggers>
+</Configuration>
