@@ -22,7 +22,7 @@ public class Main {
                   ctx.redirect(301, location);
                 })
             )
-            .get("versions", ctx -> {
+            .get("versions/all", ctx -> {
               ctx.render(ctx.file("versions.json"));
             })
         )
