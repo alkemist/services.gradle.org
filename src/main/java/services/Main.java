@@ -18,7 +18,6 @@ public class Main {
             .prefix("::distributions|distributions-snapshots", d -> d
                 .all(Handlers.get())
                 .all(ctx -> {
-
                   String location = HttpUrlBuilder.https()
                     .host("downloads.gradle.org")
                     .path(ctx.getRequest().getPath())
